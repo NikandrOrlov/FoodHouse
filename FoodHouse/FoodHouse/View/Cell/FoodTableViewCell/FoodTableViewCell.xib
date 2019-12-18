@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodTableViewCell" rowHeight="286" id="KGk-i7-Jjw" customClass="FoodTableViewCell" customModule="FoodHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-0t-guP">
+                        <rect key="frame" x="27" y="27" width="320" height="200"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWQ-hx-RMC">
+                        <rect key="frame" x="27" y="235" width="320" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="lhm-DT-kut"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="foodCellBackground"/>
+                <constraints>
+                    <constraint firstItem="FWQ-hx-RMC" firstAttribute="top" secondItem="g5l-0t-guP" secondAttribute="bottom" constant="8" id="Hz7-Lz-gql"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FWQ-hx-RMC" secondAttribute="trailing" constant="7" id="Xy2-mI-94m"/>
+                    <constraint firstItem="FWQ-hx-RMC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="aIj-TZ-AaK"/>
+                    <constraint firstAttribute="trailing" secondItem="g5l-0t-guP" secondAttribute="trailing" constant="27" id="aco-zy-lRP"/>
+                    <constraint firstItem="g5l-0t-guP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="f2u-Z1-CAE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FWQ-hx-RMC" secondAttribute="bottom" constant="9" id="pwc-Xy-bv8"/>
+                    <constraint firstItem="g5l-0t-guP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="yIe-Sz-KxA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFood" destination="g5l-0t-guP" id="rqL-hf-Fvi"/>
+                <outlet property="lblContext" destination="FWQ-hx-RMC" id="wel-nI-KUZ"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="foodCellBackground">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.025000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
