@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+use_frameworks!
+
+target 'FoodHouse' do
+pod "TinyConstraints"
+pod 'FirebaseABTesting'
+pod 'FirebaseAuth'
+pod 'FirebaseCore'
+pod 'FirebaseDatabase'
+pod 'FirebaseFirestore'
+pod 'FirebaseFunctions'
+pod 'FirebaseMessaging'
+pod 'FirebaseRemoteConfig'
+pod 'FirebaseStorage'
+end
